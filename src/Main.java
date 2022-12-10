@@ -19,9 +19,20 @@ public class Main {
             System.out.print(number + " ");
         }
 
+      System.out.println();
+      int population = 12_000_000 ;
+      int born = population/1000*17;
+      int death = population/1000*8;
+      int start = 0;
+      while ( start<10){
+          population = population + (born - death) * 12;
+          start = start + 1;
+          System.out.println("Год "+ start + " численность населения составляет " + population);
 
-
+      }
     }
+
+
 
     }
 
