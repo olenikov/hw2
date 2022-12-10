@@ -33,14 +33,21 @@ public class Main {
 
 
         double tDepo = 15_000;
-        int mCount = 1;
+        int mCount = 0;
         while (tDepo < 12_000_000) {
-            tDepo = tDepo + (tDepo * 0.07) + 15_000;
-            mCount = mCount + 1;
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            mCount = mCount + 6;
             System.out.println("Месяц " + mCount + " Сумма накоплений " + tDepo);
 
 
         }
+
+
 
 
     }
