@@ -59,6 +59,13 @@ public class Main {
         System.out.println("Месяц " + mCount + " сумма " +tDepo );
         }
 
+        int friday = 2;
+        System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        while (friday <31){
+            friday = friday + 7;
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        }
+
 
 
     }
