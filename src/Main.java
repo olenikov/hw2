@@ -48,7 +48,7 @@ public class Main {
         }
         tDepo = 15_000;
         mCount = 0;
-        while ( mCount<108){
+        while (mCount < 108) {
             tDepo = (tDepo + (tDepo * 0.07) + 15_000);
             tDepo = (tDepo + (tDepo * 0.07) + 15_000);
             tDepo = (tDepo + (tDepo * 0.07) + 15_000);
@@ -56,18 +56,26 @@ public class Main {
             tDepo = (tDepo + (tDepo * 0.07) + 15_000);
             tDepo = (tDepo + (tDepo * 0.07) + 15_000);
             mCount = mCount + 6;
-        System.out.println("Месяц " + mCount + " сумма " +tDepo );
+            System.out.println("Месяц " + mCount + " сумма " + tDepo);
         }
 
         int friday = 2;
         System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-        while (friday <31){
+        while (friday < 31) {
             friday = friday + 7;
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
 
-
-
+        int comStart = 79;
+        int now = 2022;
+        int startTime = now - 200;
+                int endTime = now + 100;
+        while (comStart <= startTime) {
+            comStart = comStart +79;
+        }
+        while (comStart <= endTime){
+            comStart = comStart +79;
+            System.out.println(comStart);
+        }
     }
 }
-
