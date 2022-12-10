@@ -46,7 +46,18 @@ public class Main {
 
 
         }
-
+        tDepo = 15_000;
+        mCount = 0;
+        while ( mCount<108){
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            tDepo = (tDepo + (tDepo * 0.07) + 15_000);
+            mCount = mCount + 6;
+        System.out.println("Месяц " + mCount + " сумма " +tDepo );
+        }
 
 
 
